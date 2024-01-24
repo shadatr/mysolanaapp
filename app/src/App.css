@@ -1,0 +1,26 @@
+.App {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: bisque;
+}
+
+
+.value{
+  margin: 10px;
+  color: blue;
+  text-decoration: bold;
+  font-style: italic;
+  font-size: 30px;
+}
+
+.button{
+  margin: 10px;
+  font-weight: 800;
+  font-size: 30px;
+  background: pink;
+  padding: 20px;
+  border-radius: 30px;
+  cursor: pointer;
+}
