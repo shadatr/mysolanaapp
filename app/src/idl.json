@@ -1,4 +1,6 @@
-{
+
+  
+  {
     "version": "0.1.0",
     "name": "mysolanaapp",
     "instructions": [
@@ -21,10 +23,15 @@
             "isSigner": false
           }
         ],
-        "args": []
+        "args": [
+          {
+            "name": "data",
+            "type": "string"
+          }
+        ]
       },
       {
-        "name": "increment",
+        "name": "update",
         "accounts": [
           {
             "name": "baseAccount",
@@ -32,7 +39,12 @@
             "isSigner": false
           }
         ],
-        "args": []
+        "args": [
+          {
+            "name": "data",
+            "type": "string"
+          }
+        ]
       }
     ],
     "accounts": [
@@ -42,15 +54,20 @@
           "kind": "struct",
           "fields": [
             {
-              "name": "count",
-              "type": "u64"
+              "name": "data",
+              "type": "string"
+            },
+            {
+              "name": "dataList",
+              "type": {
+                "vec": "string"
+              }
             }
           ]
         }
       }
     ],
     "metadata": {
-      "address": "G7B1jSx3HiXhDaqQ3LYgx1WA16PhFvpV8bxXxjnD6j6"
+      "address": "138CkQDouCovCr6WAMvJQc4L14oLc1xjP5omAVttqLVU"
     }
   }
-  
