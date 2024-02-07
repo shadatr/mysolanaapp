@@ -7,7 +7,7 @@ import idl from './idl.json';
 import { PhantomWalletAdapter } from '@solana/wallet-adapter-wallets';
 import { useWallet, WalletProvider, ConnectionProvider } from '@solana/wallet-adapter-react';
 import { WalletModalProvider, WalletMultiButton } from '@solana/wallet-adapter-react-ui';
-require('@solana/wallet-adapter-react-ui/styles.css');
+import '@solana/wallet-adapter-react-ui/styles.css';
 
 const wallets = [ new PhantomWalletAdapter() ]
 
